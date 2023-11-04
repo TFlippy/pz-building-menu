@@ -11,7 +11,6 @@ local getTimeInMillis = getTimeInMillis()
 
 local BuildingMenu = getBuildingMenuInstance()
 
-
 BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 
 function BuildingMenuTilePickerList:render()
@@ -328,23 +327,27 @@ end
 
 
 function BuildingMenuChooseTileUI:populateSubCategoriesList()
-    local searchText = self.searchSubCategoriesListEntryBox:getInternalText();
+    local searchText = string.lower(self.searchSubCategoriesListEntryBox:getInternalText()):trim();
+    local searching = searchText ~= nil and searchText:len() > 0;
+
     self.subCategoriesList:clear();
 
-    local subCategories = self.categoriesList.items[self.categoriesList.selected].item.subCatData
+    local subCategories = self.categoriesList.items[self.categoriesList.selected].item.subCatData;
     for _, subcategories in pairs(subCategories) do
-        local subCatName = subcategories.subcategoryName
-        local subCatIcon = subcategories.subCategoryIcon
-        local objectsData = subcategories.objects
+        local subCatName = subcategories.subcategoryName;
+        local subCatIcon = subcategories.subCategoryIcon;
+        local objectsData = subcategories.objects;
 
-        if subCatName ~= nil and (string.contains(string.lower(subCatName), string.lower(searchText)) or searchText == "") then
+        local subCatName_lw = string.lower(subCatName);
+
+        if subCatName ~= nil and (not searching or string.contains(subCatName_lw, searchText)) then
             self.subCategoriesList:addItem(subCatName, {icon = subCatIcon, objectsData = objectsData});
         end
     end
 
     local selectedSubCategory = self.subCategoriesList.items[self.subCategoriesList.selected];
     if selectedSubCategory and selectedSubCategory.item then
-        self.tilesList.subCatData = self.subCategoriesList.items[self.subCategoriesList.selected].item.objectsData
+        self.tilesList.subCatData = self.subCategoriesList.items[self.subCategoriesList.selected].item.objectsData;
     end
 end
 
@@ -365,23 +368,28 @@ end
 
 
 function BuildingMenuChooseTileUI:populateCategoriesList()
-    local searchText = self.searchCategoriesListEntryBox:getInternalText()
+    local searchText = string.lower(self.searchCategoriesListEntryBox:getInternalText()):trim();
+    local searching = searchText ~= nil and searchText:len() > 0;
+
     self.categoriesList:clear();
     self.subCategoriesList:clear();
 
-    local allCategories = BuildingMenu.Categories
+    local allCategories = BuildingMenu.Categories;
     for _, categories in pairs(allCategories) do
-        local catName = categories.categoryName
-        local catIcon = categories.categoryIcon
-        local subCatData = categories.subcategories
-        if catName ~= nil and (string.contains(string.lower(catName), string.lower(searchText)) or searchText == "") then
+        local catName = categories.categoryName;
+        local catIcon = categories.categoryIcon;
+        local subCatData = categories.subcategories;
+
+        local catName_lw = string.lower(catName);
+
+        if catName ~= nil and (not searching or string.contains(catName_lw, searchText)) then
             self.categoriesList:addItem(catName, {icon = catIcon, subCatData = subCatData});
         end
     end
 
-    local selectedCategory = self.categoriesList.items[self.categoriesList.selected]
+    local selectedCategory = self.categoriesList.items[self.categoriesList.selected];
     if selectedCategory and selectedCategory.item then
-        self:populateSubCategoriesList()
+        self:populateSubCategoriesList();
     end
 end
 
