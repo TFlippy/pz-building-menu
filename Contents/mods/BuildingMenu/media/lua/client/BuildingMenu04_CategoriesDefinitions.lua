@@ -18934,7 +18934,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -18958,7 +18958,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -18982,7 +18982,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19006,7 +19006,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19030,7 +19030,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19054,7 +19054,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19078,7 +19078,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19102,7 +19102,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19126,7 +19126,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19150,7 +19150,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19174,7 +19174,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19198,7 +19198,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19222,7 +19222,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {
@@ -19246,7 +19246,7 @@ BuildingMenu.Categories = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grime_Overlay",
                         "Tooltip_Dirt_Generic",
-                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.onBuildFloorOverlay,
                         BuildingMenu.DirtRecipe,
                         true,
                         {

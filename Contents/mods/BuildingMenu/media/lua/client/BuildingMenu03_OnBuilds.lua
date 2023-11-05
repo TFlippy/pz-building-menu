@@ -438,7 +438,7 @@ end
 
 
 BuildingMenu.onBuildWall = function( sprites, name, player, objectRecipe, objectOptions)
-    local _wall = ISWoodenWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _wall = ISCustomWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     if sprites.eastSprite then
         _wall:setEastSprite(sprites.eastSprite)
@@ -466,7 +466,7 @@ end
 
 
 BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objectOptions)
-    local _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite)
+    local _floor = ISCustomFloor:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
         _floor:setEastSprite(sprites.eastSprite)
@@ -546,7 +546,6 @@ BuildingMenu.onBuildLightPole = function( sprites, name, player, objectRecipe, o
     BuildingMenu.buildObject(_lightPole, name, player, objectRecipe, objectOptions)
 end
 
-
 BuildingMenu.onBuildOutdoorLight = function( sprites, name, player, objectRecipe, objectOptions)
     local _outdoorLight = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 
@@ -568,4 +567,18 @@ BuildingMenu.onBuildOutdoorLight = function( sprites, name, player, objectRecipe
     end
 
     BuildingMenu.buildObject(_outdoorLight, name, player, objectRecipe, objectOptions)
+end
+
+BuildingMenu.onBuildFloorOverlay = function( sprites, name, player, objectRecipe, objectOptions)
+    local _overlay = ISFloorOverlay:new(name, sprites.sprite, sprites.northSprite)
+
+    if sprites.eastSprite then
+        _overlay:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _overlay:setSouthSprite(sprites.southSprite)
+    end
+
+    BuildingMenu.buildObject(_overlay, name, player, objectRecipe, objectOptions)
 end
